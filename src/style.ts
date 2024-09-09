@@ -80,3 +80,28 @@ export const NextButton = styled.button`
   font-size: 16px;
   cursor: pointer;
 `;
+export const MenuList = styled.div`
+  width: 100%;
+`;
+
+export const SelectedItems = styled.div``;
+export const SelectedItem = styled.div`
+  margin: 10px 0px;
+`;
+export const SelectedItemsLayout = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+export const QuantityToggle = styled.div`
+  background-color: lightblue;
+  border-radius: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 20px;
+`;
+export const DiscountSection = styled.div``;
+export const Dropdown = styled.div``;
+export const DropdownItem = styled.div``;
