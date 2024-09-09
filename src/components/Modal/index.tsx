@@ -22,24 +22,21 @@ export const Modal: React.FC<ModalProps> = ({ items }) => {
     const existingItem = selectedItems.find((i) => i.name === item.name);
 
     if (existingItem) {
-      // Update quantity if already selected
       setSelected(
         selectedItems.map((i) =>
           i.name === item.name ? { ...i, quantity: i.quantity + 1 } : i
         )
       );
     } else {
-      // Add new item
       setSelected([...selectedItems, { ...item, quantity: 1 }]);
     }
   };
 
   const handleComplete = () => {
     setSelectedItems(selectedItems);
-    setProcedure(""); // Close the modal by resetting procedure
+    setProcedure("");
   };
 
-  // Convert items object to array
   const itemsArray = Object.keys(items).map((key) => items[key]);
 
   return (
@@ -59,7 +56,6 @@ export const Modal: React.FC<ModalProps> = ({ items }) => {
                 {item.price.toLocaleString()}원, {item.time}
               </S.ItemDetails>
             </S.ItemText>
-            {/* Display a checkmark for selected items */}
             {selectedItems.some((i) => i.name === item.name) && (
               <S.Checkmark>✔</S.Checkmark>
             )}

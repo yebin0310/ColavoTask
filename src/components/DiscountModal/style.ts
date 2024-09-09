@@ -1,6 +1,5 @@
 import styled from "@emotion/styled";
 
-// Style components
 export const Modal = styled.div`
   background-color: white;
   padding: 20px;
@@ -54,7 +53,7 @@ export const ItemDetails = styled.div`
 
 export const Checkmark = styled.span`
   font-size: 18px;
-  color: #6200ee; /* Purple color for the checkmark */
+  color: #6200ee;
 `;
 
 export const CompleteButton = styled.button`

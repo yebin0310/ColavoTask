@@ -1,6 +1,5 @@
 import styled from "@emotion/styled";
 
-// 모달 배경
 export const ModalBackdrop = styled.div`
   position: fixed;
   top: 0;
@@ -14,7 +13,6 @@ export const ModalBackdrop = styled.div`
   z-index: 999;
 `;
 
-// 모달 본체
 export const Modal = styled.div`
   background-color: white;
   width: 300px;
@@ -24,7 +22,6 @@ export const Modal = styled.div`
   text-align: center;
 `;
 
-// 모달 헤더
 export const ModalHeader = styled.div`
   display: flex;
   justify-content: space-between;
@@ -44,7 +41,6 @@ export const ModalHeader = styled.div`
   }
 `;
 
-// 수량 리스트
 export const QuantityList = styled.div`
   display: flex;
   flex-direction: column;
@@ -52,7 +48,6 @@ export const QuantityList = styled.div`
   gap: 10px;
 `;
 
-// 수량 아이템
 export const QuantityItem = styled.div`
   background-color: #f1f3f5;
   width: 100%;

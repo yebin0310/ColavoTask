@@ -180,8 +180,8 @@ function App() {
             <DiscountEditModal
               discountName={editingDiscount.discountName}
               discountRate={editingDiscount.rate}
-              services={selectedItems.map((item) => item.name)} // Pass the service names
-              selectedServices={editingDiscount.services || []} // Pass the currently selected services
+              services={selectedItems.map((item) => item.name)}
+              selectedServices={editingDiscount.services || []}
               onClose={closeEditDiscountModal}
               onConfirm={(selectedServices) =>
                 handleDiscountUpdate(

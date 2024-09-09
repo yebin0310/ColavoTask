@@ -3,7 +3,7 @@ import create from "zustand";
 interface DiscountItem {
   name: string;
   rate: number;
-  services?: string[]; // Optional field for services associated with the discount
+  services?: string[];
 }
 
 interface SelectedItem {
